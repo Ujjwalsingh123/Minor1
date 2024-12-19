@@ -10,7 +10,7 @@ const DocumentDetails2 = () => {
   useEffect(() => {
     const fetchDocument = async () => {
       try {
-        const res = await axios.get(`http://localhost:4001/admin/adminDocumentsUploadeds/${id}`);
+        const res = await axios.get(`http://52.66.174.249:4001/admin/adminDocumentsUploadeds/${id}`);
         setDocument(res.data);
       } catch (err) {
         console.error("Error fetching document details:", err.message);
