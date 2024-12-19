@@ -21,7 +21,7 @@ function Login() {
     };
     console.log(userInfo);
     await axios
-      .post("http://localhost:4001/user/login", userInfo)
+      .post("http://52.66.174.249:4001/user/login", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
