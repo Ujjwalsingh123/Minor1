@@ -23,7 +23,7 @@ function DocumentsUploaded() {
       };
 
       await axios
-        .post("http://localhost:4001/admin/adminDocumentsUploaded", adminInfo)
+        .post("http://52.66.174.249:4001/admin/adminDocumentsUploaded", adminInfo)
         .then((res) => {
           if (res.data) {
             setDocuments(res.data.docs);
