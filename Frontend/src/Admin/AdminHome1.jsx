@@ -127,7 +127,7 @@ const AdminHome1 = () => {
       };
 
       await axios
-        .post("http://localhost:4001/admin//adminChangePassword", admindetails)
+        .post("http://52.66.174.249:4001/admin//adminChangePassword", admindetails)
         .then((res) => {
           console.log(res.data);
           if (res.data) {
@@ -240,7 +240,7 @@ const AdminHome1 = () => {
       };
 
       await axios
-        .post("http://localhost:4001/admin/adminEditDetails", admindetails)
+        .post("http://52.66.174.249:4001/admin/adminEditDetails", admindetails)
         .then((res) => {
           if (res.data) {
             setShowEditDetailsModal(false);
