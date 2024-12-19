@@ -17,7 +17,7 @@ const ExplorePage = () => {
   useEffect(() => {
     const fetchDocuments = async () => {
       try {
-        const res = await axios.post("http://localhost:4001/user/Documents");
+        const res = await axios.post("http://52.66.174.249:4001/user/Documents");
         if (res.data) {
           setDocuments(res.data.docs);
           setFilteredDocuments(res.data.docs);
