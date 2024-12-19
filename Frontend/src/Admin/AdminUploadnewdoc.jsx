@@ -47,7 +47,7 @@ function AdminUploadnewdoc() {
       }),
     };
     await axios
-      .post("http://localhost:4001/admin/adminDocuments", documentInfo)
+      .post("http://52.66.174.249:4001/admin/adminDocuments", documentInfo)
       .then((res) => {
         // console.log(res.data);
         if (res.data) {
