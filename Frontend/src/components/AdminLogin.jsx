@@ -17,7 +17,7 @@ function AdminLogin() {
       password: data.password,
     };
     await axios
-      .post("http://localhost:4001/admin/adminLogin", adminInfo)
+      .post("http://52.66.174.249:4001/admin/adminLogin", adminInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
